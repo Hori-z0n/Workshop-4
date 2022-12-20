@@ -21,7 +21,7 @@ app.get('/File',function(req, res){
     res.sendFile( __dirname + "/html/about.html")
 })
 app.get('*', (req, res)=>{
-    res.sendFile(__dirname + "/static/404.jpg", 1920, 1080)
+    res.sendFile(__dirname + "/static/404.jpg")
 })
 app.listen(3000, ()=>{
     console.log("Start Server at Port [3000]")
