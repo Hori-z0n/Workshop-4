@@ -6,7 +6,8 @@ var path = require('path');
 var filename = path.basename
 
 app.get('/', (req, res)=>{
-    res.send('Hello world from Express Framework')
+    //res.send('Hello world from Express Framework')
+    res.sendFile(__dirname + "/html/main.html")
 })
 app.get('/home',(req, res)=>{
     res.sendFile( __dirname + "/html/homepage.html")
